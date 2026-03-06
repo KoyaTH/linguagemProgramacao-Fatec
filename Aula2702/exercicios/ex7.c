@@ -5,9 +5,9 @@ int main() {
     float aumento;
 
     printf("Digite o salario: ");
-    scanf("%f", &salario);
+    scanf("%f%*c", &salario);
     printf("Digite a porcentagem de aumento: ");
-    scanf("%f", &aumento);
+    scanf("%f%*c", &aumento);
 
     printf("Seu novo salario: R$%.2f", salario * (1+aumento/100));
 

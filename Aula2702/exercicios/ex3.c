@@ -5,7 +5,7 @@ int main() {
     float area, raio, pi;
     pi = 3.14;
     printf("Digite o valor do raio do circulo: ");
-    scanf("%f", &raio);
+    scanf("%f%*c", &raio);
 
     area = pi * pow(raio, 2);
 
