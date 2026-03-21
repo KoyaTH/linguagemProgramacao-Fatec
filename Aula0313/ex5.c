@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {   
-    char nome[30];
+    char nome;
     int idade;
     float mensalidade;
 
