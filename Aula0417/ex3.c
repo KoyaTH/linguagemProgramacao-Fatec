@@ -21,7 +21,7 @@ int main() {
             rep+= 1;
         }else{
             printf("\nAluno %d precisa de Exame\n", i);
-            exam+1;
+            exam+= 1;
         }
         printf("Media do aluno %d: %.2f", i, media);
         mediaClasse+=media;
