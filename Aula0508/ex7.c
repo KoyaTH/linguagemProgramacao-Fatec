@@ -1,21 +1,27 @@
 #include <stdio.h>
 
 int main() {
-    int vetorA[20], vetorB[20], vetorC[20], i,j, troca;
+    int vetorA[10], vetorB[10], vetorC[10], i = 0, j = 0, troca;
 
-    for(i = 0; i < 20; i++)
+    for(i = 0; i < 5; i++)
     {
         printf("\nDigite o %d Numero Inteiro do Vetor A: ", i+1);
         scanf("%d%*c", &vetorA[i]);
         printf("\nDigite o %d Numero Inteiro do Vetor B: ", i+1);
         scanf("%d%*c", &vetorB[i]);
     }
-    for(i = 0; i < 20; i++){
-        vetorC[i] = vetorA[i] + vetorB[i];
+    for(i = 0; i < 10; i++){
+        if (i < 5)
+        {
+            vetorC[i] = vetorA[i];
+        }else{
+            vetorC[i] = vetorB[j];
+            j++;
+        }
     }
-    for ( i = 0; i < 19; i++)
+    for ( i = 0; i < 9; i++)
     {
-        for ( j = i+1; j < 20; j++)
+        for ( j = i+1; j < 10; j++)
         {
             if (vetorC[i] > vetorC[j])
             {
@@ -26,7 +32,7 @@ int main() {
         } 
     }
     printf("\nNumeros do Vetor C: ");
-    for ( i = 0; i < 20; i++)
+    for ( i = 0; i < 10; i++)
     {
         printf("%d - ", vetorC[i]);
     }
