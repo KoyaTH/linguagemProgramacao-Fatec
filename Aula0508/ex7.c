@@ -29,14 +29,14 @@ int main() {
                 vetorB[i] = vetorB[j];
                 vetorB[j] = aux;
             } 
-        } 
+        }
     }
     j = 0;
     for (i = 0; i < 5; i++)
     {
         vetorC[j] = vetorA[i];
         j++;
-        vetorC[j] = vetorA[i];
+        vetorC[j] = vetorB[i];
         j++;
     }
 
@@ -52,10 +52,14 @@ int main() {
             } 
         } 
     }
-    printf("\nNumeros do Vetor C: ");
+        printf("\nNumeros do Vetor C: ");
     for ( i = 0; i < 10; i++)
     {
-        printf("%d - ", vetorC[i]);
+        printf("%d", vetorC[i]);
+        if (i < 9) {
+            printf(" - ");
+        }
     }
+
     return 0;
 }
